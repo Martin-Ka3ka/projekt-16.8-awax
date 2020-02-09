@@ -1,0 +1,36 @@
+.about {
+    margin-top: 40px;
+
+    .about_title {
+        text-align: center;
+        text-transform: uppercase;
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h5 {
+            color: $color-letters-gray;
+            margin-bottom: 30px;
+        }
+    }
+
+    .about_content {
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about_video {
+        box-shadow: 5px 13px 22px 8px $color-background-black;
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}

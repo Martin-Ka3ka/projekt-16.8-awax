@@ -1,0 +1,84 @@
+header {
+    height: 90vh;
+    background-image: url('/images/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .header_content {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 28vh;
+
+        :nth-child(1) {
+            color: $color-letters-white;
+            font-size: 72px;
+        }
+
+        :nth-child(2) {
+            color: $color-awax-gold;
+            font-size: 72px;
+            margin-top: -20px;
+        }
+
+        :nth-child(3) {
+            color: $color-letters-white;
+            font-size: 24px;
+            margin-top: 5px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+    }
+
+    .paginator {
+        display: flex;
+        justify-content: center;
+        margin-top: 190px;
+
+        li {
+            width: 12px;
+            height: 12px;
+            border: 1px solid $color-awax-gold;
+            border-radius: 50%;
+            display: block;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                background-color: $color-awax-gold;
+            }
+        }
+
+        :nth-of-type(2) {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+    }
+
+    .phone_icon {
+        background-color: $color-awax-gold;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 22px;
+        position: absolute;
+        bottom: -25px;
+        cursor: pointer;
+        outline: none;
+        right: 8%;
+        color: $color-letters-white;
+        transition: .3s;
+
+        &:hover {
+            background-color: $color-background-black;
+        }
+    }
+
+
+
+
+
+}

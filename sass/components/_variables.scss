@@ -1,0 +1,24 @@
+$color-awax-gold:#B88B58;
+$color-background-black:rgb(0, 0, 0);
+$color-letters-white:rgb(255, 255, 255);
+$color-letters-gray:rgb(174, 174, 174);
+
+
+
+.btn_main {
+    background-color: $color-awax-gold;
+    border: none;
+    color: $color-letters-white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 22px;
+    padding: 15px 55px;
+    transition: .4s;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-background-black;
+    }
+}
