@@ -1,0 +1,70 @@
+.projects {
+    height: 80vh;
+
+    .projects_content {
+        color: $color-background-black;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 50px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+
+        }
+
+        h5 {
+            color: $color-letters-gray;
+        }
+    }
+
+    .menu_projects {
+        margin-top: 50px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                border: 2px solid $color-letters-gray;
+                padding: 20px 40px;
+                background-color: $color-background-gray;
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    color: $color-background-black;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                :before {
+                    content: "";
+                    position: absolute;
+                    width: 57%;
+                    height: 6px;
+                    background-color: $color-awax-gold;
+                    top: 94%;
+                    left: 23%;
+                    transform: scale(0);
+                }
+            }
+
+
+        }
+
+        :nth-child(1) {
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+        }
+
+        :nth-last-of-type(1) {
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+    }
+
+}
