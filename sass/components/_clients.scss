@@ -1,0 +1,20 @@
+.clients {
+    height: 80vh;
+
+    .clients_title {
+        color: $color-background-black;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 50px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            color: $color-letters-gray;
+        }
+    }
+
+}

@@ -37,24 +37,8 @@ header {
         margin-top: 190px;
 
         li {
-            width: 12px;
-            height: 12px;
-            border: 1px solid $color-awax-gold;
-            border-radius: 50%;
-            display: block;
-            cursor: pointer;
-            transition: .3s;
-
-            &:hover {
-                background-color: $color-awax-gold;
-            }
+            @include li_paginator;
         }
-
-        :nth-of-type(2) {
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-
     }
 
     .phone_icon {
@@ -76,9 +60,5 @@ header {
             background-color: $color-background-black;
         }
     }
-
-
-
-
 
 }

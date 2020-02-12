@@ -5,6 +5,21 @@ $color-letters-gray:rgb(174, 174, 174);
 $color-background-gray:rgb(237, 237, 237);
 
 
+@mixin li_paginator {
+    width: 12px;
+    height: 12px;
+    border: 1px solid $color-awax-gold;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: $color-awax-gold;
+    }
+}
+
+
 
 .btn_main {
     background-color: $color-awax-gold;

@@ -1,0 +1,95 @@
+.team {
+    background-image: url(../images/members-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
+
+    .team_title {
+        color: $color-letters-white;
+        margin-top: 50px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        color: $color-letters-gray;
+    }
+
+    .team_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding-top: 40px;
+        background-color: $color-letters-white;
+
+        figure {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 600;
+            padding-top: 35px;
+        }
+
+        P {
+            color: $color-letters-gray;
+            font-size: 12px;
+            padding-top: 5px;
+        }
+
+        .social_media {
+            display: flex;
+            justify-content: space-around;
+            width: 75%;
+            margin-top: 30px;
+            padding-bottom: 40px;
+
+            li {
+                list-style: none;
+                width: 32px;
+                height: 32px;
+                background-color: $color-letters-gray;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 32px;
+                transition: .5s;
+
+                a {
+                    color: $color-letters-white;
+                    display: block;
+                }
+
+                &:hover {
+                    background-color: $color-awax-gold;
+                }
+            }
+        }
+    }
+
+    .paginator {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        li {
+            @include li_paginator;
+        }
+
+        :nth-of-type(2) {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}

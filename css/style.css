@@ -260,11 +260,6 @@ header .paginator li:hover {
   background-color: #B88B58;
 }
 
-header .paginator :nth-of-type(2) {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 header .phone_icon {
   background-color: #B88B58;
   border: none;
@@ -325,19 +320,19 @@ header .phone_icon:hover {
   padding-bottom: 60px;
 }
 
-.services .services_content {
+.services .services_title {
   color: white;
   text-align: center;
   text-transform: uppercase;
   margin-top: 50px;
 }
 
-.services .services_content h2 {
+.services .services_title h2 {
   font-size: 28px;
   margin-bottom: 10px;
 }
 
-.services .services_content h5 {
+.services .services_title h5 {
   color: #aeaeae;
 }
 
@@ -375,7 +370,7 @@ header .phone_icon:hover {
 }
 
 .projects {
-  height: 80vh;
+  padding-bottom: 70px;
 }
 
 .projects .projects_content {
@@ -396,6 +391,7 @@ header .phone_icon:hover {
 
 .projects .menu_projects {
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .projects .menu_projects ul {
@@ -431,6 +427,11 @@ header .phone_icon:hover {
   top: 94%;
   left: 23%;
   transform: scale(0);
+  transition: .5s;
+}
+
+.projects .menu_projects ul li:hover :before {
+  transform: scale(1);
 }
 
 .projects .menu_projects :nth-child(1) {
@@ -441,5 +442,283 @@ header .phone_icon:hover {
 .projects .menu_projects :nth-last-of-type(1) {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
+}
+
+.projects .gallery_project figure img {
+  width: 100%;
+  height: auto;
+}
+
+.projects .gallery_project .box {
+  position: relative;
+  cursor: pointer;
+}
+
+.projects .gallery_project .box .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 0;
+  color: white;
+  transition: .8s;
+}
+
+.projects .gallery_project .box .layer h4 {
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  opacity: 0;
+  transition: .8s;
+}
+
+.projects .gallery_project .box .layer p {
+  line-height: 1.5;
+  opacity: 0;
+  transition: .8s;
+}
+
+.projects .gallery_project .box:hover .layer {
+  height: 100%;
+}
+
+.projects .gallery_project .box:hover h4 {
+  opacity: 1;
+}
+
+.projects .gallery_project .box:hover p {
+  opacity: 1;
+}
+
+.projects .btn_box {
+  text-align: center;
+}
+
+.team {
+  background-image: url(../images/members-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 70px;
+}
+
+.team .team_title {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.team h5 {
+  color: #aeaeae;
+}
+
+.team .team_box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 30px;
+  padding-top: 40px;
+  background-color: white;
+}
+
+.team .team_box figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.team .team_box h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 35px;
+}
+
+.team .team_box P {
+  color: #aeaeae;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.team .team_box .social_media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75%;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.team .team_box .social_media li {
+  list-style: none;
+  width: 32px;
+  height: 32px;
+  background-color: #aeaeae;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  transition: .5s;
+}
+
+.team .team_box .social_media li a {
+  color: white;
+  display: block;
+}
+
+.team .team_box .social_media li:hover {
+  background-color: #B88B58;
+}
+
+.team .paginator {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 20px;
+}
+
+.team .paginator li {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #B88B58;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.team .paginator li:hover {
+  background-color: #B88B58;
+}
+
+.team .paginator :nth-of-type(2) {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.clients {
+  height: 80vh;
+}
+
+.clients .clients_title {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.clients .clients_title h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.clients .clients_title h5 {
+  color: #aeaeae;
+}
+
+.logos {
+  border-top: 1px solid #aeaeae;
+  border-bottom-width: 5px;
+  border-bottom-color: #aeaeae;
+  border-bottom-style: double;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.logos .logo_box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.logos .logo_box figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.price {
+  background-color: #ededed;
+}
+
+.price .price_title {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.price .price_title h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.price .price_title h5 {
+  color: #aeaeae;
+}
+
+.price .price_box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.price .price_box h4 {
+  text-transform: uppercase;
+  padding-top: 35px;
+}
+
+.price .price_box h2 {
+  padding-top: 10px;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.price .price_box h4:nth-child(3) {
+  color: #aeaeae;
+  margin-top: -35px;
+  padding-bottom: 20px;
+}
+
+.price .price_box > p {
+  font-weight: 500;
+}
+
+.price .price_box button {
+  background-color: black;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 25px;
+  width: 128px;
+  height: 45px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.price .price_box button:hover {
+  background-color: #B88B58;
 }
 /*# sourceMappingURL=style.css.map */
