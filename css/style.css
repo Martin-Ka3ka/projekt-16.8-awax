@@ -654,6 +654,7 @@ header .phone_icon:hover {
 
 .price {
   background-color: #ededed;
+  padding-bottom: 30px;
 }
 
 .price .price_title {
@@ -661,6 +662,7 @@ header .phone_icon:hover {
   text-align: center;
   text-transform: uppercase;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .price .price_title h2 {
@@ -702,6 +704,7 @@ header .phone_icon:hover {
 
 .price .price_box > p {
   font-weight: 500;
+  color: #aeaeae;
 }
 
 .price .price_box button {
@@ -720,5 +723,97 @@ header .phone_icon:hover {
 
 .price .price_box button:hover {
   background-color: #B88B58;
+}
+
+.premium {
+  padding-bottom: 50px;
+}
+
+.premium .premium_title {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.premium .premium_title h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.premium .premium_title h5 {
+  color: #aeaeae;
+}
+
+.premium figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.premium .premium_list {
+  padding-top: 25px;
+}
+
+.premium .premium_list li {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.premium .premium_list li .premium_content {
+  margin-left: 25px;
+  line-height: 1.8;
+  color: #aeaeae;
+}
+
+.premium .premium_list li .premium_content h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-bottom: 5px;
+  color: black;
+}
+
+.premium .line {
+  width: 90%;
+  height: 1px;
+  margin: 20px auto;
+  background-color: #aeaeae;
+}
+
+.premium .paginator {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 20px;
+}
+
+.premium .paginator li {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #B88B58;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.premium .paginator li:hover {
+  background-color: #B88B58;
+}
+
+.premium .paginator :nth-of-type(2) {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.premium .center {
+  text-align: center;
+}
+
+.premium .center button {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

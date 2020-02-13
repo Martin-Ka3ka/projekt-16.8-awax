@@ -1,11 +1,13 @@
 .price {
     background-color: $color-background-gray;
+    padding-bottom: 30px;
 
     .price_title {
         color: $color-background-black;
         text-align: center;
         text-transform: uppercase;
         margin-top: 50px;
+        margin-bottom: 20px;
 
         h2 {
             font-size: 28px;
@@ -46,6 +48,7 @@
 
         >p {
             font-weight: 500;
+            color: $color-letters-gray;
         }
 
         button {
